@@ -24,7 +24,7 @@ function App() {
       const formatedSupply = ethers.utils.formatEther(totalSupply);
       console.log(formatedSupply, 'totalSupply');
       setContractSupply(formatedSupply);
-    }, [])
+    }, [contract])
 
   useEffect(() => {
     getInfo2()
